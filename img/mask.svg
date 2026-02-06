@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 378 53"
+  preserveAspectRatio="none"
+>
+  <!-- белое = видно -->
+  <path
+    fill="white"
+    d="
+      M4 6
+      C20 0, 50 8, 80 4
+      S140 8, 180 5
+      S260 9, 320 6
+      S360 8, 374 6
+
+      L374 47
+
+      C350 52, 300 45, 260 49
+      S180 45, 140 48
+      S60 44, 20 48
+      S6 46, 4 47
+      Z
+    "
+  />
+</svg>
