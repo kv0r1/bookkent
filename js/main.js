@@ -26,15 +26,14 @@ function setLoading(boolean) {
     document.querySelector(".loader").style.display = boolean ? "block" : "none";
 }
 
-const url = "http://127.0.0.1:5000"
+const url = "http://45.12.69.71:5000"
 
 function modal_alert(text) {
-    //заглушка
     alert(text)
 
 }
 
-document.querySelector(".divider").onclick = ()=>{
+document.querySelector(".divider").onclick = () => {
     eraseCookie("token")
     setup_login_page()
 }
@@ -48,7 +47,6 @@ function log_in() {
 
     fetch(`${url}/books/login`, {
         method: "post",
-
         headers: {
             "content-type": "application/json",
         },
@@ -118,6 +116,7 @@ function get_fragment() {
         method: "get",
         credentials: "include",
         headers: {
+            "Authorization":getCookie("token"),
             "content-type": "application/json",
         }
     }).then(r => {
@@ -144,6 +143,7 @@ function set_read_true() {
         method: "get",
         credentials: "include",
         headers: {
+            "Authorization":getCookie("token"),
             "content-type": "application/json",
         }
     }).then(r => {
@@ -167,6 +167,7 @@ function set_read_false() {
         method: "get",
         credentials: "include",
         headers: {
+            "Authorization": getCookie("token"),
             "content-type": "application/json",
         }
     }).then(r => {
@@ -193,6 +194,7 @@ function setup_fragment_page() {
             method: "get",
             credentials: "include",
             headers: {
+                "Authorization": getCookie("token"),
                 "content-type": "application/json",
             }
         })
