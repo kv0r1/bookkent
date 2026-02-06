@@ -26,7 +26,7 @@ function setLoading(boolean) {
     document.querySelector(".loader").style.display = boolean ? "block" : "none";
 }
 
-const url = "http://45.12.69.71:5000"
+const url = "https://46001018-b15b-4290-84c3-19bb9210b32b-00-rmpxlr5unqb4.spock.replit.dev"
 
 function modal_alert(text) {
     alert(text)
@@ -234,4 +234,5 @@ function setup_fragment_page() {
 }
 
 setup_login_page()
+
 
